@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddTask"
+    android:background="@drawable/black_bg"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/at_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hGrey"
+        android:fontFamily="monospace"
+        android:text="Title"
+        android:textColor="#000000"
+        android:textSize="35dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+
+    <EditText
+        android:id="@+id/at_dscrptn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dGrey"
+        android:fontFamily="casual"
+        android:gravity="top"
+        android:lines="10"
+        android:text="Description"
+        android:textColor="#000000"
+        android:textSize="16dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:gravity="bottom|center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Themes"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="top">
+
+            <Button
+                android:id="@+id/red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="28dp"
+                android:background="@color/hRed"
+                android:text="Red"/>
+
+            <Button
+                android:id="@+id/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/hBlue"
+                android:text="Blue"/>
+
+            <Button
+                android:id="@+id/yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="28dp"
+                android:background="@color/hYellow"
+                android:text="Yellow"
+                android:textColor="@color/hGrey"/>
+
+        </RelativeLayout>
+
+    <Button
+        android:id="@+id/at_add"
+        android:layout_width="124dp"
+        android:layout_height="72dp"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:text="Add it !"
+        android:textStyle="bold"
+        android:background="#66CC00"/>
+    </LinearLayout>
